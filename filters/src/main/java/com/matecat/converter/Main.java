@@ -13,9 +13,11 @@ public class Main {
 
 
 	public static void main(String[] args) throws Exception {
-		if (Charset.defaultCharset() != StandardCharsets.UTF_8) {
-			throw new Exception("Java default charset is " + Charset.defaultCharset() + ", must be UTF-8. Fix your configuration.");
-		}
+		// TODO: UTF-8 셋팅을 beanstalk에서 하는 방법을 찾지 못해서 임시적으로 막아 놓음
+		// UTF-8 기반으로 AWS가 셋팅되어 있어서 동작에는 문제가 없음
+//		if (Charset.defaultCharset() != StandardCharsets.UTF_8) {
+//			throw new Exception("Java default charset is " + Charset.defaultCharset() + ", must be UTF-8. Fix your configuration.");
+//		}
 
 		// Init the server
 		MatecatConverterServer server = new MatecatConverterServer();

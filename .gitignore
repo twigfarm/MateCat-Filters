@@ -12,4 +12,4 @@ target
 dependency-reduced-pom.xml
 
 # Exclude local configuration files
-config.properties
+# config.properties
